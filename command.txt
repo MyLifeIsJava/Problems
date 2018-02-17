@@ -1,0 +1,2 @@
+git commit -am "comment"
+git push -f origin master
