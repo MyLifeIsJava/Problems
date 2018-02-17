@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Problem description : https://code.google.com/codejam/contest/3264486/dashboard#s=p1&a=0
  * @author kiran
- * Status : wrong logic. Failed for 735, 424, 825 etc
+ * Status : Fails for 735, 424, 825 etc
  */
 public class TidyNumbers {
     public static void main(String []args) {

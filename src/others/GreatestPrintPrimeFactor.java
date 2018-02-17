@@ -1,5 +1,12 @@
 package others;
 
+/**
+ * 
+ * Status : Completed
+ * 
+ * @author kiran
+ *
+ */
 public class GreatestPrintPrimeFactor {
 
     public static void main(String[] args) {

@@ -1,2 +1,8 @@
+#Add new files
+git add .
+#Add files to staging
 git commit -am "comment"
+#Push changes to repository
+git push origin master
+#Push changes to repository - FORCE
 git push -f origin master
