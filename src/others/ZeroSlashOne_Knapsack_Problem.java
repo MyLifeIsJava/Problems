@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * Dynamic Programming
+ * 
  * We are given the items.
  * Each item has a weight and a value.
  * And a weight is given as input.
@@ -82,17 +84,6 @@ public class ZeroSlashOne_Knapsack_Problem {
                 }
             }
         }
-        for(int i=0; i <= weight; i++) {
-            System.out.print(i+"\t");
-        }
-        System.out.println();
-
-        for(int i = 0; i <  matrix.length; i++) {
-            for(int j=0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j]+"\t");
-            }
-            System.out.println();
-        }
 //        Now find out the items
         List<Integer> consideredWeights = new ArrayList<>();
         int i = items.length - 1; //Last row
@@ -120,7 +111,7 @@ public class ZeroSlashOne_Knapsack_Problem {
         if(!consideredWeights.isEmpty()) {
             retArray = new int[consideredWeights.size()];
             for(int x = 0; x < consideredWeights.size(); x++)
-                retArray[x] = consideredWeights.get(x);
+                retArray[consideredWeights.size() - (1+x)] = consideredWeights.get(x);
                 
         }
         return retArray;
