@@ -3,10 +3,27 @@ package leetcode.weeklycontest._73;
 public class Domino_and_Tromino_Tiling {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        Domino_and_Tromino_Tiling obj = new Domino_and_Tromino_Tiling();
+        for(int i=0; i < 5; i++) {
+            System.out.println("N="+i+", ans="+ obj.numTilings(i));
+        }
     }
+/*
+    def numTilings(self, N):
+        def numTilingsD(N):
+            if N in cacheD: return cacheD[N]
+            if N <= 2: return N if N > 0 else 1 if N == 0 else 0
+            cacheD[N] = (numTilingsD(N - 2) + numTilingsD(N - 1) + (2 * numTilingsT(N - 1))) % ((10**9) + 7)
+            return cacheD[N]
 
+        def numTilingsT(N):
+            if N in cacheT: return cacheT[N]
+            if N <= 2: return 1 if N == 2 else 1 if N == 0 else 0
+            cacheT[N] = (numTilingsD(N - 2) + numTilingsT(N - 1)) % ((10**9) + 7)
+            return cacheT[N]
+        cacheD, cacheT = {}, {}
+        return numTilingsD(N)
+*/                
     public int numTilings(int n) {
         int mod = 1000000007;
         long[] dp = new long[4];
