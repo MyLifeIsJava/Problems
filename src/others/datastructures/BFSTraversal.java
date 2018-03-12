@@ -18,18 +18,18 @@ public class BFSTraversal {
 
     }
 
-    public static <T> void levelorder_recursive(TreeNode<T> node) {
-        LinkedList<TreeNode<T>> queue = new LinkedList<>();
+    public static <T> void levelorder_recursive(BinaryTreeNode<T> node) {
+        LinkedList<BinaryTreeNode<T>> queue = new LinkedList<>();
         queue.add(node);
         levelorder_recursive(queue);
     }
     
-    public static <T> void levelorder_recursive(LinkedList<TreeNode<T>> queue) {
+    public static <T> void levelorder_recursive(LinkedList<BinaryTreeNode<T>> queue) {
         if(queue.isEmpty())
             return;
-        LinkedList<TreeNode<T>> queue2 = new LinkedList<>();
+        LinkedList<BinaryTreeNode<T>> queue2 = new LinkedList<>();
         while(!queue.isEmpty()) {
-            TreeNode<T> node = queue.removeFirst();
+            BinaryTreeNode<T> node = queue.removeFirst();
             System.out.println(node);
             if(node.getLeft() != null)
                 queue2.addLast(node.getLeft());
@@ -39,11 +39,11 @@ public class BFSTraversal {
         levelorder_recursive(queue2);
     }
     
-    public static <T> void levelorder_iterative(TreeNode<T> node) {
+    public static <T> void levelorder_iterative(BinaryTreeNode<T> node) {
         if(node == null)
             return;
-        LinkedList<TreeNode<T>> queue = new LinkedList<>();
-        TreeNode<T> currNode = node;
+        LinkedList<BinaryTreeNode<T>> queue = new LinkedList<>();
+        BinaryTreeNode<T> currNode = node;
         queue.addFirst(node);
         while(!queue.isEmpty()) {
             currNode = queue.removeFirst();

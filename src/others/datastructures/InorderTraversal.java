@@ -17,27 +17,27 @@ public class InorderTraversal {
         inorder_recursive(getTree());
     }
     
-    public static TreeNode<Integer> getTree() {
+    public static BinaryTreeNode<Integer> getTree() {
         int count = 1;
         
-        TreeNode<Integer> root = new TreeNode<>(count++);
+        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(count++);
         
-        TreeNode<Integer> left = new TreeNode<Integer>(count++);
+        BinaryTreeNode<Integer> left = new BinaryTreeNode<Integer>(count++);
         root.setLeft(left);
-        TreeNode<Integer> right = new TreeNode<Integer>(count++);
+        BinaryTreeNode<Integer> right = new BinaryTreeNode<Integer>(count++);
         root.setRight(right);
         
-        TreeNode<Integer> currNode1 = left;
-        TreeNode<Integer> currNode2 = right;
+        BinaryTreeNode<Integer> currNode1 = left;
+        BinaryTreeNode<Integer> currNode2 = right;
         
-        left = new TreeNode<Integer>(count++);
+        left = new BinaryTreeNode<Integer>(count++);
         currNode1.setLeft(left);
-        right = new TreeNode<Integer>(count++);
+        right = new BinaryTreeNode<Integer>(count++);
         currNode1.setRight(right);
         
-        left = new TreeNode<Integer>(count++);
+        left = new BinaryTreeNode<Integer>(count++);
         currNode2.setLeft(left);
-        right = new TreeNode<Integer>(count++);
+        right = new BinaryTreeNode<Integer>(count++);
         currNode2.setRight(right);
         
         /*
@@ -50,7 +50,7 @@ public class InorderTraversal {
         return root;
     }
 
-    public static <T> void inorder_recursive(TreeNode<T> node) {
+    public static <T> void inorder_recursive(BinaryTreeNode<T> node) {
         if(node == null)
             return;
         inorder_recursive(node.getLeft());
@@ -58,11 +58,11 @@ public class InorderTraversal {
         inorder_recursive(node.getRight());
     }
     
-    public static <T> void inorder_iterative(TreeNode<T> node) {
+    public static <T> void inorder_iterative(BinaryTreeNode<T> node) {
         if(node == null)
             return;
-        LinkedList<TreeNode<T>> stack = new LinkedList<>();
-        TreeNode<T> currNode = node;
+        LinkedList<BinaryTreeNode<T>> stack = new LinkedList<>();
+        BinaryTreeNode<T> currNode = node;
         while(currNode != null) {
             stack.addFirst(currNode);
             currNode = currNode.getLeft();

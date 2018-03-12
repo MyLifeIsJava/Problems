@@ -18,7 +18,7 @@ public class PreOrderTraversal {
         
     }
 
-    public static <T> void preorder_recursive(TreeNode<T> node) {
+    public static <T> void preorder_recursive(BinaryTreeNode<T> node) {
         if(node == null)
             return;
         System.out.println(node);
@@ -26,11 +26,11 @@ public class PreOrderTraversal {
         preorder_recursive(node.getRight());
     }
     
-    public static <T> void preorder_iterative(TreeNode<T> node) {
+    public static <T> void preorder_iterative(BinaryTreeNode<T> node) {
         if(node == null)
             return;
-        LinkedList<TreeNode<T>> stack = new LinkedList<>();
-        TreeNode<T> currNode = node;
+        LinkedList<BinaryTreeNode<T>> stack = new LinkedList<>();
+        BinaryTreeNode<T> currNode = node;
         stack.addFirst(node);
         while(!stack.isEmpty()) {
             currNode = stack.removeFirst();

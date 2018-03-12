@@ -19,7 +19,7 @@ public class PostOrderTraversal {
         
     }
 
-    public static <T> void postorder_recursive(TreeNode<T> node) {
+    public static <T> void postorder_recursive(BinaryTreeNode<T> node) {
         if(node == null)
             return;
         postorder_recursive(node.getLeft());
@@ -27,12 +27,12 @@ public class PostOrderTraversal {
         System.out.println(node);
     }
     
-    public static <T> void postorder_iterative(TreeNode<T> node) {
+    public static <T> void postorder_iterative(BinaryTreeNode<T> node) {
         if(node == null)
             return;
-        HashSet<TreeNode<T>> traversedNodes = new HashSet<>();
-        LinkedList<TreeNode<T>> stack = new LinkedList<>();
-        TreeNode<T> currNode = node;
+        HashSet<BinaryTreeNode<T>> traversedNodes = new HashSet<>();
+        LinkedList<BinaryTreeNode<T>> stack = new LinkedList<>();
+        BinaryTreeNode<T> currNode = node;
         stack.addFirst(node);
         while(!stack.isEmpty()) {
             currNode = stack.getFirst();
