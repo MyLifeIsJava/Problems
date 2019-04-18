@@ -20,3 +20,12 @@ We need the below records in the couchbase database
 | cd2919a2-58a3-4fe6-9d6a-b59310cdae8b-role | {<br>  "personId": "cd2919a2-58a3-4fe6-9d6a-b59310cdae8b",<br>  "instances": [<br>    "NEWTON_AUTO_TEST_INSTANCE",<br>    "NEWTON_AUTO_DELETE_TEST_INSTANCE",<br>    "NEWTON_AUTO_API_ROLE_TEST_INSTANCE",<br>    "NEWTON_AUTO_ANON_TEST_INSTANCE"<br>  ],<br>  "roles": [<br>    "SUPERADMIN"<br>  ],<br>  "resourceType": "userRole"<br>}<br> | This is the SUPERADMIN user |
 | 249c6d75-4082-4125-b639-9d3951312abf-role | {<br>  "personId": "249c6d75-4082-4125-b639-9d3951312abf",<br>  "instances": [<br>    "NEWTON_AUTO_API_ROLE_TEST_INSTANCE",<br>  ],<br>  "roles": [<br>    "CUSTOM_ROLE"<br>  ],<br>  "resourceType": "userRole"<br>} | This use has CUSTOM_ROLE which is used to test user defined roles for API access |
 
+We need the below users in Janrain
+
+| Email Id | UUID | Password | Description |
+| ------ | ------ | ------ | ------ |
+| newton_auto_test_user@newton.com | bb9830a2-c98e-4675-a2bd-5a0913b76e5a | Check with Newton team | This user is used for SELF role |
+| newton_auto_test_proxy@newton.com | 093b59ec-c424-4d0b-a2ef-21031651f063 | Check with Newton team | This user is used for PROXY role |
+| newton_auto_test_moderator@newton.com | 7e5f3277-8efe-46e4-848d-2ab0289e23b4 | Check with Newton team | Used for MODERATOR user |
+| newton_auto_test_superadmin@newton.com | cd2919a2-58a3-4fe6-9d6a-b59310cdae8b | Check with Newton team | Used for SUPERADMIN role |
+| newton_auto_test_custom_role@newton.com | 249c6d75-4082-4125-b639-9d3951312abf | Check with Newton team | Used for CUSTOM_ROLE role |
