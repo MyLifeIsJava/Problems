@@ -8,9 +8,9 @@ We need below LDAP users
 
 | LDAP User | Role | Instances | Description |
 | ------ | ------ | ------ | ------ |
-| NEWTON_AUTO_TEST | NEWTON_NXT_API_CLIENT | NEWTON_AUTO_TEST_INSTANCE, NEWTON_AUTO_DELETE_TEST_INSTANCE, NEWTON_AUTO_ANON_TEST_INSTANCE, NEWTON_AUTO_API_ROLE_TEST_INSTANCE | This user is used to test all the APIs  |
-| NEWTON_AUTO_TEST_NO_API_CLIENT | - | - | This user is used to test that API access is not allowed when the user doesn't have the role NEWTON_NXT_API_CLIENT |
-| NEWTON_AUTO_TEST_NO_INSTANCES | NEWTON_NXT_API_CLIENT | - | This user is used to test that access on instance is not alowed unless user has the permission for that instance |
+| <sub>NEWTON_AUTO_TEST</sub> | <sub>NEWTON_NXT_API_CLIENT</sub> | <sub>NEWTON_AUTO_TEST_INSTANCE, NEWTON_AUTO_DELETE_TEST_INSTANCE, NEWTON_AUTO_ANON_TEST_INSTANCE, NEWTON_AUTO_API_ROLE_TEST_INSTANCE</sub> | <sub>This user is used to test all the APIs</sub>  |
+| <sub>NEWTON_AUTO_TEST_NO_API_CLIENT</sub> | - | - | <sub>This user is used to test that API access is not allowed when the user doesn't have the role NEWTON_NXT_API_CLIENT</sub> |
+| <sub>NEWTON_AUTO_TEST_NO_INSTANCES</sub> | <sub>NEWTON_NXT_API_CLIENT</sub> | - | <sub>This user is used to test that access on instance is not alowed unless user has the permission for that instance</sub> |
 
 We need the below records in the couchbase database
 
