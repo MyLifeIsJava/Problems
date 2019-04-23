@@ -39,7 +39,8 @@ We need the below users in Janrain
 	profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}
 	```
 * Records having resourceType="person" or resourceType="event"
-	* If encrypted, store ```javascript
+	* If encrypted, store 
+	```json
 	json securedFields:["field1", "field2"]
 	``` in the record record itself
 * Chained action which update Janrain record
