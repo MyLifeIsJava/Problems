@@ -34,7 +34,8 @@ We need the below users in Janrain
 
 #### Data migration ####
 * Records having resourceType="person"
-	* Add ```javascript 
+	* Add 
+	```javascript 
 	profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}
 	```
 * Records having resourceType="person" or resourceType="event"
