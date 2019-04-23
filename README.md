@@ -35,12 +35,16 @@ We need the below users in Janrain
 #### Data migration ####
 * Records having resourceType="person"
 	* Add ```javascript 
-	profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}```
+	profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}
+	```
 * Records having resourceType="person" or resourceType="event"
 	* If encrypted, store ```javascript
-	json securedFields:["field1", "field2"]``` in the record record itself
+	json securedFields:["field1", "field2"]
+	``` in the record record itself
 * Chained action which update Janrain record
 	* Use ```javascript
-	json payload.profile.profileId``` instead of ```javascript
-	json payload.id```
+	json payload.profile.profileId
+	``` instead of ```javascript
+	json payload.id
+	```
 
