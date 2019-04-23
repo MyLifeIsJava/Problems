@@ -42,7 +42,8 @@ We need the below users in Janrain
 	* If encrypted, store 
 	```json
 	json securedFields:["field1", "field2"]
-	``` in the record record itself
+	``` 
+	in the record record itself
 * Chained action which update Janrain record
 	* Use ```javascript
 	json payload.profile.profileId
