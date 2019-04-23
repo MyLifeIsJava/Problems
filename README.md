@@ -34,7 +34,8 @@ We need the below users in Janrain
 
 #### Data migration ####
 * Records having resourceType="person"
-	* Add ```json profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}```
+	* Add ```json 
+	profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}```
 * Records having resourceType="person" or resourceType="event"
 	* If encrypted, store ```json securedFields:["field1", "field2"]``` in the record record itself
 * Chained action which update Janrain record
